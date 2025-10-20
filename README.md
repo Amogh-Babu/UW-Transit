@@ -1,16 +1,36 @@
-# React + Vite
+# UW Transit 🚍
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+UW Transit is a fullstack web app designed to help students navigate and move safely around the University of Washington campus. The app shows live crowd density data, allowing users to spot busy areas and report crowded or unsafe zones in real time.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Tech Stack
+- **Frontend:** React (Vite) + TailwindCSS  
+- **Backend:** Python (Flask)  
+- **Database:** SQLite  
+- **Hosting:** Render (Frontend + Backend)  
+- **Maps:** Google Maps JavaScript API + HeatmapLayer  
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🗺️ Features
+- Interactive map showing live crowd heatmap  
+- Report crowded or dangerous areas instantly  
+- View confirmed crowd and danger zones from the backend  
+- Dynamic UI with marker placement and confirmation  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚙️ Deployment (Render)
+
+### **Frontend (Static Site)**
+- **Root Directory:** `frontend`  
+- **Build Command:** `npm install && npm run build`  
+- **Publish Directory:** `dist`  
+
+### **Backend (Web Service)**
+- **Root Directory:** `backend`  
+- **Build Command:** `pip install -r requirements.txt`  
+- **Start Command:**  
+  ```bash
+  python main.py
